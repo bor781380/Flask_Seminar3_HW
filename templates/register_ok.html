@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+    <h1>Регистрация</h1>
+        <form method="GET" action="{{ url_for('register') }}">
+        <img src="{{ url_for('static', filename='image/foto.jpg') }}" alt="Моё фото" width="300">
+            <br>
+            <h4>Пользователь {{ form.name.data }} {{ form.lastname.data }} зарегистрирован!</h4>
+
+        </form>
+</body>
+{% endblock %}
